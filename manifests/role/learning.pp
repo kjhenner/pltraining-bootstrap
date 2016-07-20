@@ -3,7 +3,7 @@ class bootstrap::role::learning {
   include bootstrap
   include bootstrap::profile::pe_tweaks
   class {'learning':
-    git_branch => 'master',
+    git_branch => 'hello_puppet',
   }
   class {'bootstrap::profile::splash':
     # Note: the $IP_ADDRESS string is a variable determined at boot time by rc.local
