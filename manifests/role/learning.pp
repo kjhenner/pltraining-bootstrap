@@ -16,6 +16,7 @@ class bootstrap::role::learning {
   include bootstrap::profile::learning::ssh
   include bootstrap::profile::learning::quest_tool
   include bootstrap::profile::learning::multi_node
+  include bootstrap::profile::learning::mirror_learning_gems
   class { 'userprefs::bash':
     password => '$1$hgIZHl1r$tEqMTzoXz.NBwtW3kFv33/',
     replace  => true,
